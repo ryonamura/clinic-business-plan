@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>美容皮膚科クリニック 事業計画書</title>
+<style>
+@page {
+    size: A4;
+    margin: 2cm 1.5cm;
+}
+@media print {
+    body { font-size: 9pt; }
+    h1 { page-break-before: always; }
+    h1:first-of-type { page-break-before: avoid; }
+    table { page-break-inside: avoid; }
+    .no-print { display: none !important; }
+    .cover { page-break-after: always; }
+    pre { page-break-inside: avoid; }
+}
+* { box-sizing: border-box; }
+body {
+    font-family: "Hiragino Kaku Gothic Pro", "Yu Gothic", "Meiryo", "Noto Sans JP", sans-serif;
+    font-size: 11pt;
+    line-height: 1.7;
+    color: #1a1a2e;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    background: #fff;
+}
+/* Cover */
+.cover {
+    text-align: center;
+    padding: 120px 0 80px;
+    border-bottom: none;
+}
+.cover h1 {
+    font-size: 32pt;
+    color: #0c4a6e;
+    border: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+}
+.cover .subtitle {
+    font-size: 16pt;
+    color: #0ea5e9;
+    margin-top: 16px;
+    font-weight: 600;
+}
+.cover .meta {
+    margin-top: 40px;
+    font-size: 11pt;
+    color: #64748b;
+    line-height: 2;
+}
+.cover .accent-line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #0ea5e9, #06d6a0);
+    margin: 30px auto;
+    border-radius: 2px;
+}
+/* Headings */
+h1 {
+    font-size: 22pt;
+    color: #0c4a6e;
+    border-bottom: 3px solid #0ea5e9;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+h2 {
+    font-size: 15pt;
+    color: #0369a1;
+    border-bottom: 2px solid #bae6fd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+h3 {
+    font-size: 13pt;
+    color: #0c4a6e;
+    margin-top: 20px;
+}
+h4 {
+    font-size: 11pt;
+    color: #1e293b;
+    margin-top: 15px;
+}
+/* Table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 12px 0;
+    font-size: 10pt;
+}
+th {
+    background: linear-gradient(135deg, #0369a1, #0c4a6e);
+    color: white;
+    padding: 8px 10px;
+    text-align: left;
+    font-weight: 600;
+}
+td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #e2e8f0;
+}
+tr:nth-child(even) td {
+    background-color: #f0f9ff;
+}
+tr:hover td {
+    background-color: #e0f2fe;
+}
+/* Code blocks */
+pre {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: "SF Mono", "Menlo", "Consolas", monospace;
+    font-size: 9.5pt;
+    margin: 12px 0;
+}
+/* Blockquote */
+blockquote {
+    border-left: 4px solid #0ea5e9;
+    padding: 12px 20px;
+    margin: 12px 0;
+    background: #f0f9ff;
+    color: #0c4a6e;
+    font-style: italic;
+}
+/* Lists */
+ul, ol {
+    margin: 8px 0 8px 24px;
+}
+li {
+    margin-bottom: 4px;
+}
+/* Highlight boxes */
+.highlight {
+    background: linear-gradient(135deg, #f0f9ff, #ecfdf5);
+    border: 1px solid #bae6fd;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+}
+.highlight-warn {
+    background: #fffbeb;
+    border-color: #fde68a;
+}
+.highlight strong {
+    color: #0c4a6e;
+}
+/* Floating toolbar */
+.toolbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 8px;
+}
+.toolbar button {
+    background: linear-gradient(135deg, #0ea5e9, #06d6a0);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s;
+    font-family: inherit;
+    box-shadow: 0 4px 12px rgba(14,165,233,0.3);
+}
+.toolbar button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+.toolbar .btn-back {
+    background: #334155;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+/* TOC */
+.toc {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 24px 30px;
+    margin: 24px 0;
+}
+.toc h2 {
+    font-size: 13pt;
+    color: #0c4a6e;
+    border: none;
+    margin: 0 0 12px 0;
+    padding: 0;
+}
+.toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.toc li {
+    margin: 6px 0;
+}
+.toc a {
+    color: #0369a1;
+    text-decoration: none;
+    font-size: 10.5pt;
+}
+.toc a:hover {
+    text-decoration: underline;
+}
+.toc .toc-sub {
+    padding-left: 20px;
+}
+/* Responsive */
+@media (max-width: 600px) {
+    body { padding: 20px 16px; }
+    .cover { padding: 60px 0 40px; }
+    .cover h1 { font-size: 22pt; }
+    .toolbar { top: auto; bottom: 20px; right: 16px; }
+    table { font-size: 8.5pt; }
+    th, td { padding: 4px 6px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Toolbar -->
+<div class="toolbar no-print">
+  <button class="btn-back" onclick="location.href='index.html'">← 一覧</button>
+  <button onclick="window.print()">PDF ダウンロード</button>
+</div>
+
+<!-- Cover Page -->
+<div class="cover" id="cover">
+  <div class="accent-line"></div>
+  <h1 style="border:none; margin:0; padding:0;">美容皮膚科クリニック<br>事業計画書</h1>
+  <p class="subtitle">池袋1号店 → 10年100店舗 成長戦略</p>
+  <div class="accent-line"></div>
+  <div class="meta">
+    <p>開設主体: 一般社団法人（非営利型）</p>
+    <p>1号店所在地: 東京都豊島区南池袋1-26-6 The SH ONE ビル 9F</p>
+    <p>作成日: 2026年2月</p>
+    <p>Confidential</p>
+  </div>
+</div>
+
+<!-- Executive Summary -->
+<h1 id="summary">エグゼクティブサマリー</h1>
+
+<p>池袋に美容皮膚科クリニック1号店を開業し、1年1店舗ペースで拡張。3年で3店舗→医療法人化、10年で100店舗体制を構築する。</p>
+
+<table>
+<tr><th>マイルストーン</th><th>時期</th><th>店舗数</th><th>月商目標</th><th>組織形態</th></tr>
+<tr><td>1号店開業</td><td>Year 0</td><td>1</td><td>2,000万円</td><td>一般社団法人</td></tr>
+<tr><td>2号店開業</td><td>Year 1</td><td>2</td><td>4,000万円</td><td>一般社団法人</td></tr>
+<tr><td>3号店・医療法人化</td><td>Year 2-3</td><td>3</td><td>7,500万円</td><td>医療法人へ移行</td></tr>
+<tr><td>10店舗</td><td>Year 4-5</td><td>10</td><td>2.5億円</td><td>医療法人+MS法人</td></tr>
+<tr><td>30店舗</td><td>Year 6-7</td><td>30</td><td>7.5億円</td><td>HD体制検討</td></tr>
+<tr><td>100店舗</td><td>Year 10</td><td>100</td><td>25億円</td><td>グループHD</td></tr>
+</table>
+
+<!-- TOC -->
+<div class="toc no-print">
+  <h2>目次</h2>
+  <ul>
+    <li><a href="#part1">Part 1: 池袋1号店 事業計画</a>
+      <ul class="toc-sub">
+        <li><a href="#p1-corp">1.1 開設主体: 一般社団法人</a></li>
+        <li><a href="#p1-location">1.2 物件: The SH ONE ビル 9F</a></li>
+        <li><a href="#p1-concept">1.3 コンセプト・差別化戦略</a></li>
+        <li><a href="#p1-investment">1.4 初期投資</a></li>
+        <li><a href="#p1-revenue">1.5 収益モデル</a></li>
+        <li><a href="#p1-license">1.6 必要な許認可</a></li>
+      </ul>
+    </li>
+    <li><a href="#part2">Part 2: 多店舗展開計画</a>
+      <ul class="toc-sub">
+        <li><a href="#p2-roadmap">2.1 展開ロードマップ</a></li>
+        <li><a href="#p2-area">2.2 エリア展開戦略</a></li>
+        <li><a href="#p2-model">2.3 直営 vs フランチャイズ</a></li>
+        <li><a href="#p2-corp">2.4 医療法人化</a></li>
+        <li><a href="#p2-fund">2.5 資金調達ロードマップ</a></li>
+      </ul>
+    </li>
+    <li><a href="#part3">Part 3: 人員計画</a></li>
+    <li><a href="#part4">Part 4: 採用計画</a></li>
+    <li><a href="#part5">Part 5: 教育・研修計画</a></li>
+    <li><a href="#part6">Part 6: KPI設計</a></li>
+    <li><a href="#part7">Part 7: リスク管理</a></li>
+    <li><a href="#references">参考資料</a></li>
+  </ul>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART 1 -->
+<!-- ============================================================ -->
+
+<h1 id="part1">Part 1: 池袋1号店 事業計画</h1>
+
+<h2 id="p1-corp">1.1 開設主体: 一般社団法人（非営利型）</h2>
+
+<p>1号店は<strong>非営利型一般社団法人</strong>を開設主体として開業する。医療法人ではなく一般社団法人を選択する理由と、法的要件は以下の通り。</p>
+
+<h3>一般社団法人を選択する理由</h3>
+<table>
+<tr><th>項目</th><th>一般社団法人</th><th>医療法人</th></tr>
+<tr><td>設立手続き</td><td>登記のみ（都道府県認可不要）</td><td>都道府県の認可必須</td></tr>
+<tr><td>設立期間</td><td><strong>2〜4週間</strong></td><td>6ヶ月以上</td></tr>
+<tr><td>設立費用</td><td><strong>約13万円</strong>（定款認証5万+登記印紙6万+他）</td><td>100〜200万円</td></tr>
+<tr><td>代表者要件</td><td><strong>医師以外も可能</strong></td><td>医師・歯科医師のみ</td></tr>
+<tr><td>分院展開</td><td>保健所への開設許可申請のみ</td><td>都道府県認可が必要</td></tr>
+<tr><td>相続税</td><td>出資持分なし → <strong>相続税なし</strong></td><td>出資持分ありの場合は課税対象</td></tr>
+<tr><td>税制</td><td>収益事業のみ課税（実質同等）</td><td>同等</td></tr>
+</table>
+
+<h3>法的要件</h3>
+<table>
+<tr><th>要件</th><th>内容</th></tr>
+<tr><td>法人タイプ</td><td><strong>非営利型</strong>一般社団法人のみ（普通型は不可）</td></tr>
+<tr><td>定款必須記載</td><td>剰余金の分配を行わない旨 / 解散時の残余財産が国・自治体・公益社団法人に帰属する旨</td></tr>
+<tr><td>設立時社員</td><td>最低2名以上</td></tr>
+<tr><td>管理者（院長）</td><td>医師免許を持つ常勤医師（週4日以上勤務）</td></tr>
+<tr><td>理事</td><td>医師以外でも可（経営者が理事に就任可能）</td></tr>
+<tr><td>診療所開設</td><td><strong>開設許可申請</strong>が必要（個人の届出制とは異なる）</td></tr>
+</table>
+
+<div class="highlight highlight-warn">
+  <strong>注意点:</strong>
+  <ul>
+    <li>保健所から「なぜ医療法人ではなく一般社団法人か」の理由書・誓約書の提出を求められる場合あり</li>
+    <li>前例が少ないため保健所の審査が長引く可能性 → <strong>事前相談を必ず実施</strong></li>
+    <li>将来の医療法人への移行は新設+解散の手続きが必要（単純な転換は不可）</li>
+  </ul>
+</div>
+
+<h3>設立から開業までのタイムライン</h3>
+<table>
+<tr><th>ステップ</th><th>期間</th><th>内容</th></tr>
+<tr><td>1. 定款作成・認証</td><td>1週間</td><td>公証役場での定款認証（5万円）</td></tr>
+<tr><td>2. 法人設立登記</td><td>1〜2週間</td><td>法務局へ申請（印紙6万円）</td></tr>
+<tr><td>3. 保健所 事前相談</td><td>随時</td><td>定款の非営利性チェック ← <strong>最重要</strong></td></tr>
+<tr><td>4. 内装工事・機器搬入</td><td>1〜2ヶ月</td><td>居抜き物件のため短縮可能</td></tr>
+<tr><td>5. 診療所開設許可申請</td><td>1〜3ヶ月</td><td>保健所への許可申請+実地検査</td></tr>
+<tr><td>6. 開業</td><td>-</td><td>開設届を10日以内に提出</td></tr>
+</table>
+
+<h2 id="p1-location">1.2 物件: The SH ONE ビル 9F</h2>
+
+<table>
+<tr><th>項目</th><th>詳細</th></tr>
+<tr><td>所在地</td><td>東京都豊島区南池袋1丁目26-6</td></tr>
+<tr><td>ビル名</td><td>The SH ONE ビル</td></tr>
+<tr><td>階数</td><td><strong>9F</strong>（ビル全体: 地上11階）</td></tr>
+<tr><td>面積</td><td><strong>31.4坪</strong>（約103.8㎡）</td></tr>
+<tr><td>築年</td><td>2008年5月竣工（築約18年、新耐震基準対応）</td></tr>
+<tr><td>構造</td><td>鋼構造</td></tr>
+<tr><td>設備</td><td>エレベーター1基、機械警備、24時間入室可能</td></tr>
+<tr><td>池袋駅から</td><td><strong>徒歩3分</strong></td></tr>
+<tr><td>立地特性</td><td>グリーン大通り沿い角地、南池袋ビジネスエリア</td></tr>
+</table>
+
+<h3>賃料試算</h3>
+<table>
+<tr><th>項目</th><th>試算</th><th>根拠</th></tr>
+<tr><td>坪単価</td><td>18,000〜22,000円/坪</td><td>池袋エリア20〜40坪区画の相場</td></tr>
+<tr><td>月額賃料</td><td><strong>56.5〜69.1万円</strong></td><td>31.4坪 × 坪単価</td></tr>
+<tr><td>共益費（想定）</td><td>5〜10万円</td><td>一般的な相場</td></tr>
+<tr><td>敷金・保証金</td><td>340〜415万円</td><td>賃料6ヶ月分</td></tr>
+</table>
+
+<div class="highlight">
+  <strong>居抜き物件のメリット:</strong>
+  <ul>
+    <li>内装工事費を大幅削減（スケルトンの1,200〜1,600万円 → <strong>300〜600万円</strong>に圧縮見込み）</li>
+    <li>既存の空調・電気・給排水設備を活用可能</li>
+    <li>工期短縮（2〜3ヶ月 → 1〜1.5ヶ月）</li>
+    <li>造作譲渡費用が発生する場合あり（要確認）</li>
+  </ul>
+</div>
+
+<h2 id="p1-concept">1.3 コンセプト・差別化戦略</h2>
+
+<h3>ターゲット</h3>
+<ul>
+  <li>20〜40代女性（池袋周辺・埼玉方面からのアクセス層）</li>
+  <li>美容医療初心者〜リピーター</li>
+</ul>
+
+<h3>差別化ポイント</h3>
+<p>池袋は湘南美容3院など競合激戦区。以下で差別化を図る：</p>
+<ul>
+  <li><strong>専門特化</strong>: シミ・肝斑治療 or 医療脱毛で「池袋No.1」を狙う</li>
+  <li><strong>カウンセリング重視</strong>: 無理な勧誘なし・丁寧な説明で口コミ評価を獲得</li>
+  <li><strong>SNSマーケティング</strong>: Instagram/TikTokでの症例写真・ビフォーアフター発信</li>
+  <li><strong>リピート設計</strong>: コース契約+ホームケア製品でLTV最大化</li>
+</ul>
+
+<h2 id="p1-investment">1.4 初期投資</h2>
+
+<h3>初期投資内訳（居抜き物件前提）</h3>
+<table>
+<tr><th>項目</th><th>金額</th><th>備考</th></tr>
+<tr><td>テナント敷金・保証金</td><td>340〜415万円</td><td>賃料6ヶ月分（31.4坪 × 坪18,000〜22,000円）</td></tr>
+<tr><td>内装工事（居抜き改修）</td><td>300〜600万円</td><td>居抜きのため大幅圧縮（スケルトン比▲60%）</td></tr>
+<tr><td>造作譲渡費用</td><td>0〜300万円</td><td>前テナントとの交渉次第</td></tr>
+<tr><td>医療機器</td><td>3,000〜4,000万円</td><td>下記詳細参照</td></tr>
+<tr><td>その他設備</td><td>300〜500万円</td><td>ベッド、照明、空調補修等</td></tr>
+<tr><td>法人設立+開業手続き</td><td>50〜80万円</td><td>一般社団法人設立13万円+行政書士+諸経費</td></tr>
+<tr><td><strong>初期投資 小計</strong></td><td><strong>約4,000〜5,900万円</strong></td><td></td></tr>
+<tr><td>運転資金（6ヶ月分）</td><td>1,400〜1,700万円</td><td>人件費・賃料（月65万）・消耗品</td></tr>
+<tr><td><strong>総額</strong></td><td><strong>約5,400〜7,600万円</strong></td><td></td></tr>
+</table>
+
+<div class="highlight">
+  <strong>居抜き物件による削減効果:</strong> スケルトンからの開業（6,200〜8,000万円）と比較して<strong>約800〜1,400万円の削減</strong>
+</div>
+
+<h3>主要医療機器</h3>
+<table>
+<tr><th>機器</th><th>用途</th><th>概算価格</th><th>優先度</th></tr>
+<tr><td>ダイオードレーザー</td><td>医療脱毛</td><td>700〜1,000万円</td><td>必須</td></tr>
+<tr><td>YAGレーザー</td><td>深部脱毛・産毛</td><td>700〜1,000万円</td><td>必須</td></tr>
+<tr><td>IPL</td><td>シミ・くすみ</td><td>700〜1,000万円</td><td>必須</td></tr>
+<tr><td>HIFU</td><td>たるみ改善</td><td>700〜1,000万円</td><td>推奨</td></tr>
+<tr><td>ピコレーザー</td><td>タトゥー除去・美肌</td><td>1,500万円〜</td><td>Phase2</td></tr>
+</table>
+
+<div class="highlight">
+  <strong>コスト削減策:</strong> リース活用で初期費用を月額30〜50万円/台に分散可能
+</div>
+
+<h3>資金調達</h3>
+<table>
+<tr><th>調達方法</th><th>金額</th><th>備考</th></tr>
+<tr><td>自己資金</td><td>1,100〜1,500万円</td><td>総額の20〜25%</td></tr>
+<tr><td>銀行融資</td><td>3,500〜5,000万円</td><td>医師向け開業ローン / 法人融資</td></tr>
+<tr><td>医療機器リース</td><td>月額100〜150万円</td><td>購入の代替（初期投資さらに圧縮可）</td></tr>
+</table>
+
+<h2 id="p1-revenue">1.5 収益モデル</h2>
+
+<h3>施術メニューと価格帯</h3>
+<table>
+<tr><th>施術</th><th>単価</th><th>所要時間</th><th>月間件数目標</th><th>月売上</th></tr>
+<tr><td>医療脱毛（全身）</td><td>20〜50万円</td><td>60〜90分</td><td>25件</td><td>625万円</td></tr>
+<tr><td>医療脱毛（部分）</td><td>5〜10万円</td><td>15〜30分</td><td>50件</td><td>375万円</td></tr>
+<tr><td>シミ治療</td><td>10〜30万円</td><td>30〜45分</td><td>20件</td><td>300万円</td></tr>
+<tr><td>HIFU</td><td>10〜20万円</td><td>45〜60分</td><td>15件</td><td>225万円</td></tr>
+<tr><td>美肌注射・点滴</td><td>5〜15万円</td><td>15〜20分</td><td>35件</td><td>280万円</td></tr>
+<tr><td>ドクターズコスメ</td><td>0.5〜3万円</td><td>-</td><td>70件</td><td>105万円</td></tr>
+<tr><td><strong>合計</strong></td><td></td><td></td><td><strong>215件/月</strong></td><td><strong>約1,900万円</strong></td></tr>
+</table>
+
+<h3>損益計画（月次）</h3>
+<table>
+<tr><th>項目</th><th>開業〜3ヶ月</th><th>4〜6ヶ月</th><th>7〜12ヶ月</th><th>13ヶ月〜</th></tr>
+<tr><td><strong>売上</strong></td><td>500万円</td><td>1,200万円</td><td>2,000万円</td><td>2,500万円</td></tr>
+<tr><td>人件費</td><td>▲350万円</td><td>▲380万円</td><td>▲420万円</td><td>▲450万円</td></tr>
+<tr><td>賃料（31.4坪）</td><td>▲65万円</td><td>▲65万円</td><td>▲65万円</td><td>▲65万円</td></tr>
+<tr><td>消耗品・薬剤</td><td>▲75万円</td><td>▲180万円</td><td>▲300万円</td><td>▲375万円</td></tr>
+<tr><td>広告費</td><td>▲200万円</td><td>▲150万円</td><td>▲150万円</td><td>▲125万円</td></tr>
+<tr><td>リース・減価償却</td><td>▲150万円</td><td>▲150万円</td><td>▲150万円</td><td>▲150万円</td></tr>
+<tr><td>その他経費</td><td>▲50万円</td><td>▲50万円</td><td>▲50万円</td><td>▲50万円</td></tr>
+<tr><td><strong>営業利益</strong></td><td><strong>▲390万円</strong></td><td><strong>+225万円</strong></td><td><strong>+865万円</strong></td><td><strong>+1,285万円</strong></td></tr>
+<tr><td>営業利益率</td><td>-</td><td>19%</td><td>43%</td><td>51%</td></tr>
+</table>
+
+<div class="highlight">
+  <strong>黒字化時期:</strong> 開業4〜6ヶ月目<br>
+  <strong>初期投資回収:</strong> 開業12〜18ヶ月
+</div>
+
+<h2 id="p1-license">1.6 必要な許認可</h2>
+
+<table>
+<tr><th>届出</th><th>提出先</th><th>タイミング</th><th>備考</th></tr>
+<tr><td><strong>診療所開設許可申請</strong></td><td>豊島区保健所</td><td>開設前（審査1〜3ヶ月）</td><td>一般社団法人は「許可」が必要（個人の届出制と異なる）</td></tr>
+<tr><td>診療所開設届</td><td>豊島区保健所</td><td>開設後10日以内</td><td>許可取得後に提出</td></tr>
+<tr><td>X線装置備付届</td><td>豊島区保健所</td><td>装置設置後10日以内</td><td></td></tr>
+<tr><td>保険医療機関指定申請</td><td>関東信越厚生局</td><td>保険診療を行う場合</td><td></td></tr>
+<tr><td>法人設立届出書</td><td>税務署</td><td>設立後2ヶ月以内</td><td>一般社団法人として</td></tr>
+<tr><td>青色申告承認申請</td><td>税務署</td><td>設立後3ヶ月以内</td><td></td></tr>
+</table>
+
+<div class="highlight highlight-warn">
+  <strong>一般社団法人特有の注意点:</strong> 保健所から「なぜ医療法人ではなく一般社団法人を選択したか」の<strong>理由書・誓約書</strong>の提出を求められることがある。事前相談を必ず行うこと。
+</div>
+
+<!-- ============================================================ -->
+<!-- PART 2 -->
+<!-- ============================================================ -->
+
+<h1 id="part2">Part 2: 多店舗展開計画（3年3店舗→10年100店舗）</h1>
+
+<h2 id="p2-roadmap">2.1 展開ロードマップ</h2>
+
+<h3>Phase 1: 基盤構築（Year 0〜3）— 1→3店舗</h3>
+
+<pre>
+Year 0  [1号店 池袋 SH ONEビル9F] 開業（一般社団法人）
+         ├─ 6ヶ月: 黒字化達成
+         └─ 9ヶ月: 月商2,000万円安定
+
+Year 1  [2号店] 開業（新宿 or 渋谷）
+         ├─ 一般社団法人のまま分院展開（保健所許可申請のみ）
+         ├─ 1号店の成功モデルを複製
+         └─ 医療法人化の検討開始
+
+Year 2  [3号店] 開業（横浜 or 大宮）
+         ├─ 医療法人設立 → 一般社団法人から事業承継
+         ├─ MS法人設立（物販・リース事業）
+         └─ 本部機能の確立開始
+</pre>
+
+<div class="highlight highlight-warn">
+  <strong>2号店出店の前提条件:</strong>
+  <ul>
+    <li>1号店が6ヶ月以上継続して黒字</li>
+    <li>年間所得3,000万円以上</li>
+    <li>2号店院長候補の医師を確保済み</li>
+    <li>1号店の運営を任せられるスタッフが育成済み</li>
+  </ul>
+</div>
+
+<h3>Phase 2: 拡大期（Year 3〜5）— 3→10店舗</h3>
+
+<pre>
+Year 3  4〜5号店 開業（首都圏内: 品川、立川等）
+         ├─ エリアマネージャー制度導入
+         └─ 教育研修プログラム標準化
+
+Year 4  6〜8号店 開業
+         ├─ 関西エリア進出（大阪1号店）
+         └─ 採用チーム・マーケチーム本部化
+
+Year 5  9〜10号店 開業
+         ├─ 名古屋進出
+         └─ 月商2.5億円体制
+</pre>
+
+<h3>Phase 3: 加速期（Year 5〜7）— 10→30店舗</h3>
+
+<pre>
+Year 5-6  年間5〜8店舗ペースで出店
+           ├─ 首都圏: 15店舗体制
+           ├─ 関西: 5店舗体制
+           └─ 中部: 3店舗体制
+
+Year 7    30店舗達成
+           ├─ 月商7.5億円
+           ├─ HD（ホールディングス）体制検討
+           └─ PE/VCファンドからの資金調達検討
+</pre>
+
+<h3>Phase 4: 全国展開期（Year 7〜10）— 30→100店舗</h3>
+
+<pre>
+Year 7-8   年間15〜20店舗ペースに加速
+            ├─ 九州・東北進出
+            ├─ 専門人材の大量採用体制
+            └─ 50店舗達成
+
+Year 9-10  年間20〜30店舗ペース
+            ├─ 地方中核都市への展開
+            ├─ 100店舗達成
+            └─ IPO検討（NASDAQ等、SBC事例参考）
+</pre>
+
+<h2 id="p2-area">2.2 エリア展開戦略</h2>
+
+<table>
+<tr><th>段階</th><th>時期</th><th>エリア</th><th>店舗数</th></tr>
+<tr><td>第1段階</td><td>Year 0〜3</td><td>東京23区→横浜・大宮</td><td>3</td></tr>
+<tr><td>第2段階</td><td>Year 3〜5</td><td>首都圏郊外→大阪→名古屋</td><td>10</td></tr>
+<tr><td>第3段階</td><td>Year 5〜7</td><td>関西圏拡大→福岡→仙台</td><td>30</td></tr>
+<tr><td>第4段階</td><td>Year 7〜10</td><td>全国主要都市→地方中核都市</td><td>100</td></tr>
+</table>
+
+<h2 id="p2-model">2.3 直営 vs フランチャイズ</h2>
+
+<p><strong>推奨: Phase 3まで直営、Phase 4以降ハイブリッド検討</strong></p>
+
+<table>
+<tr><th>方式</th><th>メリット</th><th>デメリット</th><th>採用フェーズ</th></tr>
+<tr><td>直営</td><td>品質統制、利益帰属</td><td>資本負担大</td><td>Phase 1〜3</td></tr>
+<tr><td>FC</td><td>低資本、リスク分散</td><td>品質管理難</td><td>Phase 4〜（検討）</td></tr>
+</table>
+
+<div class="highlight">
+  <strong>業界事例:</strong> 湘南美容は基本直営で140院、TCBも直営で100院達成（8年9ヶ月・業界最速）。品質管理の観点から直営が主流。
+</div>
+
+<h2 id="p2-corp">2.4 医療法人化</h2>
+
+<h3>タイミング: Year 2〜3（3店舗展開時）</h3>
+
+<p><strong>一般社団法人→医療法人への移行の判断基準:</strong></p>
+<ul>
+  <li>3店舗体制が安定し、さらなる拡大が確定した時点</li>
+  <li>年間所得1,800万円超（税率メリット発生ライン）</li>
+  <li>PE/VCからの資金調達を視野に入れる段階</li>
+</ul>
+
+<div class="highlight highlight-warn">
+  <strong>重要:</strong> 一般社団法人から医療法人への「転換」はできない。新たに医療法人を設立し、一般社団法人の事業を承継→解散する手続きが必要。
+</div>
+
+<h3>移行プロセス（約12ヶ月）</h3>
+
+<table>
+<tr><th>ステップ</th><th>期間</th><th>内容</th></tr>
+<tr><td>医療法人設立 書類準備</td><td>2〜3ヶ月</td><td>定款、事業計画、理事会議事録</td></tr>
+<tr><td>都道府県申請</td><td>受付期間中</td><td>年2回程度の受付窓口（東京都）</td></tr>
+<tr><td>審査・認可</td><td>約6ヶ月</td><td>許可書交付</td></tr>
+<tr><td>事業承継</td><td>1〜2ヶ月</td><td>一般社団法人から医療法人へ資産・契約移管</td></tr>
+<tr><td>一般社団法人 解散</td><td>1〜2ヶ月</td><td>清算手続き（残余財産は定款に従い処理）</td></tr>
+</table>
+
+<p><strong>移行費用:</strong> 約150〜300万円（行政書士・税理士費用含む）</p>
+
+<h3>一般社団法人のまま2店舗まで展開するメリット</h3>
+<ul>
+  <li>分院展開は保健所への開設許可申請のみ（都道府県認可不要）</li>
+  <li>医療法人設立の6ヶ月の審査期間を待たずに2号店を開設可能</li>
+  <li>スピード重視の初期フェーズに適している</li>
+</ul>
+
+<h3>MS法人の併用</h3>
+<p>医療法人化と同時にMS法人を設立し、以下を分離:</p>
+<ul>
+  <li>ドクターズコスメ・サプリメント販売</li>
+  <li>医療機器リース管理</li>
+  <li>不動産管理</li>
+  <li>経理・人事等のバックオフィス業務</li>
+</ul>
+
+<h2 id="p2-fund">2.5 資金調達ロードマップ</h2>
+
+<table>
+<tr><th>フェーズ</th><th>必要資金</th><th>調達手段</th></tr>
+<tr><td>1号店（居抜き）</td><td>5,400〜7,600万円</td><td>自己資金20%+銀行融資+リース</td></tr>
+<tr><td>2〜3号店</td><td>各5,000万円</td><td>1号店利益+追加融資</td></tr>
+<tr><td>4〜10号店</td><td>各4,000万円</td><td>医療法人の信用力で融資拡大</td></tr>
+<tr><td>11〜30号店</td><td>総額10億円</td><td>営業CF+不動産担保融資</td></tr>
+<tr><td>31〜100号店</td><td>総額30〜50億円</td><td>PE/VCファンド+大型シンジケートローン</td></tr>
+<tr><td>100店舗〜</td><td>数百億円</td><td>IPO（SBCはNASDAQ上場）</td></tr>
+</table>
+
+<!-- ============================================================ -->
+<!-- PART 3 -->
+<!-- ============================================================ -->
+
+<h1 id="part3">Part 3: 人員計画</h1>
+
+<h2>3.1 クリニック人員構成（1店舗あたり）</h2>
+
+<table>
+<tr><th>職種</th><th>人数</th><th>雇用形態</th><th>年収相場</th><th>月額人件費</th></tr>
+<tr><td>院長（医師）</td><td>1名</td><td>常勤</td><td>2,000〜2,500万円</td><td>170〜210万円</td></tr>
+<tr><td>非常勤医師</td><td>1名</td><td>非常勤</td><td>時給1〜1.5万円</td><td>30〜50万円</td></tr>
+<tr><td>看護師</td><td>3名</td><td>常勤</td><td>450〜600万円</td><td>115〜150万円</td></tr>
+<tr><td>カウンセラー</td><td>2名</td><td>常勤</td><td>300〜450万円</td><td>50〜75万円</td></tr>
+<tr><td>受付・事務</td><td>2名</td><td>常勤+パート</td><td>250〜350万円</td><td>40〜55万円</td></tr>
+<tr><td><strong>合計</strong></td><td><strong>9名</strong></td><td></td><td></td><td><strong>約405〜540万円/月</strong></td></tr>
+</table>
+
+<h2>3.2 バックオフィス人員（本部機能）</h2>
+
+<h3>1店舗時（最小構成）— 本部人員: 0名</h3>
+<table>
+<tr><th>機能</th><th>担当</th><th>備考</th></tr>
+<tr><td>経営管理</td><td>院長兼務</td><td></td></tr>
+<tr><td>経理</td><td>外部委託</td><td>税理士顧問 月5〜10万円</td></tr>
+<tr><td>労務</td><td>外部委託</td><td>社労士顧問 月3〜5万円</td></tr>
+<tr><td>マーケティング</td><td>院長+外注</td><td>SNS運用代行 月10〜20万円</td></tr>
+</table>
+
+<h3>3店舗時 — 本部人員: 4名</h3>
+<table>
+<tr><th>機能</th><th>人数</th><th>年収</th></tr>
+<tr><td>経営企画/事務局長</td><td>1名</td><td>500〜700万円</td></tr>
+<tr><td>人事・採用</td><td>1名</td><td>400〜500万円</td></tr>
+<tr><td>経理</td><td>1名</td><td>350〜450万円</td></tr>
+<tr><td>マーケティング</td><td>1名</td><td>400〜550万円</td></tr>
+</table>
+
+<h3>10店舗時 — 本部人員: 15名</h3>
+<table>
+<tr><th>部門</th><th>人数</th><th>主な役割</th></tr>
+<tr><td>経営企画</td><td>2名</td><td>経営分析、戦略立案</td></tr>
+<tr><td>人事部</td><td>3名</td><td>採用、教育、労務管理</td></tr>
+<tr><td>経理・財務</td><td>2名</td><td>経理、資金管理</td></tr>
+<tr><td>マーケティング</td><td>3名</td><td>ブランディング、SNS、広告</td></tr>
+<tr><td>運営管理・QA</td><td>2名</td><td>品質管理、コンプライアンス</td></tr>
+<tr><td>IT/システム</td><td>1名</td><td>電子カルテ、予約システム</td></tr>
+<tr><td>エリアマネージャー</td><td>2名</td><td>店舗統括</td></tr>
+</table>
+
+<h3>100店舗時 — 本部人員: 約130名</h3>
+<table>
+<tr><th>部門</th><th>人数</th></tr>
+<tr><td>経営層</td><td>5名</td></tr>
+<tr><td>経営企画</td><td>8名</td></tr>
+<tr><td>人事・採用</td><td>15名</td></tr>
+<tr><td>教育・研修</td><td>10名</td></tr>
+<tr><td>経理・財務</td><td>12名</td></tr>
+<tr><td>マーケティング</td><td>25名</td></tr>
+<tr><td>運営管理・QA</td><td>12名</td></tr>
+<tr><td>IT/システム</td><td>12名</td></tr>
+<tr><td>法務・コンプライアンス</td><td>5名</td></tr>
+<tr><td>施設開発・設備</td><td>10名</td></tr>
+<tr><td>エリアマネージャー</td><td>15名</td></tr>
+</table>
+
+<div class="highlight">
+  <strong>100店舗グループ総人員: 約1,030名</strong>（店舗900名 + 本部130名）
+</div>
+
+<h2>3.3 フェーズ別 総人員推移</h2>
+
+<table>
+<tr><th>時期</th><th>店舗数</th><th>店舗人員</th><th>本部人員</th><th>総人員</th></tr>
+<tr><td>Year 0</td><td>1</td><td>9名</td><td>0名</td><td>9名</td></tr>
+<tr><td>Year 1</td><td>2</td><td>18名</td><td>2名</td><td>20名</td></tr>
+<tr><td>Year 2-3</td><td>3</td><td>27名</td><td>4名</td><td>31名</td></tr>
+<tr><td>Year 4-5</td><td>10</td><td>90名</td><td>15名</td><td>105名</td></tr>
+<tr><td>Year 6-7</td><td>30</td><td>270名</td><td>38名</td><td>308名</td></tr>
+<tr><td>Year 10</td><td>100</td><td>900名</td><td>130名</td><td>1,030名</td></tr>
+</table>
+
+<!-- ============================================================ -->
+<!-- PART 4 -->
+<!-- ============================================================ -->
+
+<h1 id="part4">Part 4: 採用計画</h1>
+
+<h2>4.1 採用チャネルと費用</h2>
+
+<h3>医師採用</h3>
+<table>
+<tr><th>チャネル</th><th>コスト</th><th>特徴</th></tr>
+<tr><td>医療専門人材紹介</td><td>年収の25〜30%（約500〜750万円/人）</td><td>確実だが高額</td></tr>
+<tr><td>医局ネットワーク</td><td>低コスト</td><td>理事長の人脈が必要</td></tr>
+<tr><td>SNS/ブランディング</td><td>月10〜30万円</td><td>長期的・ブランド効果</td></tr>
+<tr><td>学会・セミナー</td><td>イベント費用</td><td>専門医との接点</td></tr>
+</table>
+
+<h3>看護師採用</h3>
+<table>
+<tr><th>チャネル</th><th>コスト</th><th>特徴</th></tr>
+<tr><td>看護師紹介会社</td><td>年収の20〜30%（約100〜150万円/人）</td><td>即戦力確保</td></tr>
+<tr><td>求人サイト</td><td>掲載料+成功報酬</td><td>幅広い母集団</td></tr>
+<tr><td>美容看護師スクール</td><td>連携費用</td><td>新卒ルート</td></tr>
+<tr><td>リファラル（紹介）</td><td>紹介報酬10〜30万円</td><td>定着率高い</td></tr>
+</table>
+
+<h3>カウンセラー・受付</h3>
+<table>
+<tr><th>チャネル</th><th>コスト</th><th>特徴</th></tr>
+<tr><td>美容業界特化サイト</td><td>掲載料 月5〜15万円</td><td>業界経験者</td></tr>
+<tr><td>一般転職サイト</td><td>成功報酬 年収の15〜20%</td><td>幅広い母集団</td></tr>
+<tr><td>SNS採用</td><td>運用コスト</td><td>若手向け</td></tr>
+</table>
+
+<h2>4.2 年間採用計画</h2>
+
+<h3>Phase 1（Year 0〜2: 1→3店舗）</h3>
+<table>
+<tr><th>年度</th><th>医師</th><th>看護師</th><th>カウンセラー</th><th>受付</th><th>本部</th><th>採用費</th></tr>
+<tr><td>Year 0</td><td>2名</td><td>3名</td><td>2名</td><td>2名</td><td>0名</td><td>約1,500万円</td></tr>
+<tr><td>Year 1</td><td>2名</td><td>4名</td><td>2名</td><td>2名</td><td>2名</td><td>約1,800万円</td></tr>
+<tr><td>Year 2</td><td>2名</td><td>4名</td><td>2名</td><td>2名</td><td>2名</td><td>約1,800万円</td></tr>
+</table>
+
+<h3>Phase 2（Year 3〜5: 3→10店舗）</h3>
+<table>
+<tr><th>年度</th><th>医師</th><th>看護師</th><th>カウンセラー</th><th>受付</th><th>本部</th><th>採用費</th></tr>
+<tr><td>Year 3</td><td>3名</td><td>6名</td><td>4名</td><td>4名</td><td>4名</td><td>約3,000万円</td></tr>
+<tr><td>Year 4</td><td>4名</td><td>8名</td><td>5名</td><td>4名</td><td>4名</td><td>約4,000万円</td></tr>
+<tr><td>Year 5</td><td>3名</td><td>6名</td><td>4名</td><td>3名</td><td>3名</td><td>約3,200万円</td></tr>
+</table>
+
+<div class="highlight highlight-warn">
+  <strong>採用上の重要課題:</strong>
+  <ul>
+    <li><strong>医師確保が最大のボトルネック</strong> → 早期からネットワーク構築</li>
+    <li>美容業界の離職率は3年で80% → インセンティブ+キャリアパス設計が必須</li>
+    <li>Phase 3以降: 年間150〜300名採用、専任チーム15名体制</li>
+  </ul>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART 5 -->
+<!-- ============================================================ -->
+
+<h1 id="part5">Part 5: 教育・研修計画</h1>
+
+<h2>5.1 新人研修プログラム</h2>
+
+<h3>医師（2週間+OJT 3ヶ月）</h3>
+<table>
+<tr><th>期間</th><th>内容</th></tr>
+<tr><td>1週目</td><td>クリニック理念、施術メニュー学習、カウンセリング見学</td></tr>
+<tr><td>2週目</td><td>施術トレーニング（先輩医師指導）、機器操作研修</td></tr>
+<tr><td>以降3ヶ月</td><td>OJT（先輩同行）</td></tr>
+</table>
+
+<h3>看護師（1〜2ヶ月+OJT 6ヶ月）</h3>
+<table>
+<tr><th>期間</th><th>内容</th></tr>
+<tr><td>Week 1-2</td><td>基礎看護技術、ビジネスマナー、接遇研修</td></tr>
+<tr><td>Week 3-4</td><td>施術アシスト実習、機器操作研修</td></tr>
+<tr><td>Month 2</td><td>実務トレーニング（プリセプター制度）</td></tr>
+<tr><td>Month 3-6</td><td>OJT + 定期フォローアップ</td></tr>
+</table>
+
+<h3>カウンセラー（1ヶ月+OJT 2ヶ月）</h3>
+<table>
+<tr><th>期間</th><th>内容</th></tr>
+<tr><td>Week 1</td><td>施術メニュー知識、カウンセリング技法座学</td></tr>
+<tr><td>Week 2</td><td>ロールプレイング、先輩カウンセリング同席</td></tr>
+<tr><td>Week 3-4</td><td>実践（先輩同席あり）、予約システム操作</td></tr>
+<tr><td>Month 2-3</td><td>独り立ち + 定期フィードバック</td></tr>
+</table>
+
+<h2>5.2 継続教育</h2>
+
+<table>
+<tr><th>研修</th><th>頻度</th><th>対象</th></tr>
+<tr><td>施術技術アップデート</td><td>月1回</td><td>医師・看護師</td></tr>
+<tr><td>接遇研修</td><td>年3回</td><td>全スタッフ</td></tr>
+<tr><td>新メニュー研修</td><td>随時</td><td>全スタッフ</td></tr>
+<tr><td>マネジメント研修</td><td>年2回</td><td>店長・副店長候補</td></tr>
+<tr><td>エリアマネージャー研修</td><td>年2回</td><td>AM候補</td></tr>
+</table>
+
+<h2>5.3 キャリアパス</h2>
+
+<pre>
+【クリニック職】
+受付 → 副主任 → 受付主任 → 事務長
+看護師 → リーダー看護師 → 看護師長 → 統括看護師長
+カウンセラー → シニアカウンセラー → チーフカウンセラー → カウンセリング部長
+医師 → 分院院長 → 統括院長 → 医療法人理事
+
+【マネジメント職】
+店長 → エリアマネージャー → ブロック統括 → COO
+
+【本部職】
+スタッフ → リーダー → マネージャー → 部長 → 執行役員
+</pre>
+
+<!-- ============================================================ -->
+<!-- PART 6 -->
+<!-- ============================================================ -->
+
+<h1 id="part6">Part 6: KPI設計</h1>
+
+<h2>6.1 医師 KPI</h2>
+
+<table>
+<tr><th>KPI</th><th>目標値</th><th>測定頻度</th><th>重要度</th></tr>
+<tr><td>月間施術件数</td><td>200〜300件</td><td>月次</td><td>★★★</td></tr>
+<tr><td>月間売上</td><td>300〜500万円</td><td>月次</td><td>★★★</td></tr>
+<tr><td>カウンセリング成約率</td><td>40〜50%</td><td>月次</td><td>★★★</td></tr>
+<tr><td>患者リピート率</td><td>60〜70%</td><td>月次</td><td>★★☆</td></tr>
+<tr><td>患者満足度（NPS）</td><td>50以上</td><td>四半期</td><td>★★☆</td></tr>
+<tr><td>施術クレーム率</td><td>1%以下</td><td>月次</td><td>★★★</td></tr>
+</table>
+
+<h2>6.2 看護師 KPI</h2>
+
+<table>
+<tr><th>KPI</th><th>目標値</th><th>測定頻度</th><th>重要度</th></tr>
+<tr><td>月間施術件数</td><td>150〜250件</td><td>月次</td><td>★★★</td></tr>
+<tr><td>施術品質スコア</td><td>90点以上/100</td><td>月次</td><td>★★★</td></tr>
+<tr><td>物販売上</td><td>月20〜30万円</td><td>月次</td><td>★★☆</td></tr>
+<tr><td>物販成約率</td><td>50〜60%</td><td>月次</td><td>★★☆</td></tr>
+<tr><td>接遇評価</td><td>95点以上/100</td><td>月次</td><td>★★☆</td></tr>
+<tr><td>インシデント報告</td><td>0件</td><td>月次</td><td>★★★</td></tr>
+</table>
+
+<h2>6.3 カウンセラー KPI</h2>
+
+<table>
+<tr><th>KPI</th><th>目標値</th><th>測定頻度</th><th>重要度</th></tr>
+<tr><td>月間カウンセリング件数</td><td>80〜120件</td><td>月次</td><td>★★★</td></tr>
+<tr><td>成約率</td><td>30〜40%</td><td>月次</td><td>★★★</td></tr>
+<tr><td>平均客単価</td><td>15〜20万円</td><td>月次</td><td>★★★</td></tr>
+<tr><td>アップセル率</td><td>20〜30%</td><td>月次</td><td>★★☆</td></tr>
+<tr><td>リピート顧客対応数</td><td>月50〜70人</td><td>月次</td><td>★★☆</td></tr>
+<tr><td>顧客満足度</td><td>90点以上/100</td><td>月次</td><td>★★☆</td></tr>
+</table>
+
+<h2>6.4 受付 KPI</h2>
+
+<table>
+<tr><th>KPI</th><th>目標値</th><th>測定頻度</th><th>重要度</th></tr>
+<tr><td>予約確定率</td><td>90%以上</td><td>月次</td><td>★★★</td></tr>
+<tr><td>キャンセル率</td><td>10%以下（目標5%）</td><td>月次</td><td>★★★</td></tr>
+<tr><td>電話応答率</td><td>95%以上</td><td>日次</td><td>★★★</td></tr>
+<tr><td>無断キャンセル</td><td>月3件以下</td><td>月次</td><td>★★☆</td></tr>
+<tr><td>顧客対応満足度</td><td>90点以上/100</td><td>月次</td><td>★★☆</td></tr>
+</table>
+
+<h2>6.5 店長 KPI</h2>
+
+<table>
+<tr><th>KPI</th><th>目標値</th><th>測定頻度</th><th>重要度</th></tr>
+<tr><td>店舗月商</td><td>2,000〜2,500万円</td><td>月次</td><td>★★★</td></tr>
+<tr><td>営業利益率</td><td>30〜45%</td><td>月次</td><td>★★★</td></tr>
+<tr><td>スタッフ定着率</td><td>85%以上（年間）</td><td>四半期</td><td>★★★</td></tr>
+<tr><td>新患数</td><td>月100〜150人</td><td>月次</td><td>★★★</td></tr>
+<tr><td>リピート率</td><td>60〜70%</td><td>月次</td><td>★★☆</td></tr>
+<tr><td>Google口コミ評価</td><td>4.5/5.0以上</td><td>月次</td><td>★★☆</td></tr>
+<tr><td>スタッフ育成</td><td>年1名以上の次世代リーダー</td><td>年次</td><td>★★☆</td></tr>
+</table>
+
+<h2>6.6 エリアマネージャー KPI</h2>
+
+<table>
+<tr><th>KPI</th><th>目標値</th><th>測定頻度</th><th>重要度</th></tr>
+<tr><td>エリア月商</td><td>1〜2億円（5店舗）</td><td>月次</td><td>★★★</td></tr>
+<tr><td>エリア営業利益率</td><td>30%以上</td><td>月次</td><td>★★★</td></tr>
+<tr><td>新店舗立ち上げ</td><td>年1〜2店舗</td><td>年次</td><td>★★★</td></tr>
+<tr><td>店長育成</td><td>年2名以上</td><td>年次</td><td>★★★</td></tr>
+<tr><td>エリア定着率</td><td>85%以上</td><td>四半期</td><td>★★☆</td></tr>
+<tr><td>KPI未達店舗改善率</td><td>80%以上</td><td>四半期</td><td>★★☆</td></tr>
+</table>
+
+<h2>6.7 本部KPI</h2>
+
+<table>
+<tr><th>部門</th><th>KPI</th><th>目標値</th></tr>
+<tr><td>人事・採用</td><td>採用充足率</td><td>90%以上</td></tr>
+<tr><td>人事・採用</td><td>入社3ヶ月定着率</td><td>85%以上</td></tr>
+<tr><td>人事・採用</td><td>採用単価</td><td>前年比▲5%</td></tr>
+<tr><td>マーケティング</td><td>新患獲得CPA</td><td>3万円以下</td></tr>
+<tr><td>マーケティング</td><td>SNSフォロワー増加率</td><td>月+5%</td></tr>
+<tr><td>マーケティング</td><td>Web予約率</td><td>全体の60%以上</td></tr>
+<tr><td>経理</td><td>月次決算完了日</td><td>翌月10日まで</td></tr>
+<tr><td>IT</td><td>システム稼働率</td><td>99.5%以上</td></tr>
+</table>
+
+<!-- ============================================================ -->
+<!-- PART 7 -->
+<!-- ============================================================ -->
+
+<h1 id="part7">Part 7: リスク管理</h1>
+
+<h2>7.1 主要リスクと対策</h2>
+
+<table>
+<tr><th>リスク</th><th>影響度</th><th>発生確率</th><th>対策</th></tr>
+<tr><td>医師確保困難</td><td>極高</td><td>高</td><td>早期ネットワーク構築、高待遇、キャリアパス</td></tr>
+<tr><td>スタッフ離職</td><td>高</td><td>高</td><td>インセンティブ制度、教育投資、働き方改革</td></tr>
+<tr><td>競合激化</td><td>高</td><td>高</td><td>差別化戦略、ブランディング強化</td></tr>
+<tr><td>医療事故</td><td>極高</td><td>低</td><td>研修徹底、マニュアル整備、保険加入</td></tr>
+<tr><td>資金繰り悪化</td><td>高</td><td>中</td><td>保守的な出店計画、運転資金確保</td></tr>
+<tr><td>規制強化</td><td>中</td><td>中</td><td>コンプライアンス体制構築、業界団体参加</td></tr>
+<tr><td>景気悪化</td><td>中</td><td>中</td><td>コース契約で売上安定化、低価格メニュー用意</td></tr>
+</table>
+
+<h2>7.2 撤退基準</h2>
+
+<table>
+<tr><th>指標</th><th>撤退検討ライン</th></tr>
+<tr><td>開業12ヶ月経過後も赤字継続</td><td>撤退 or 業態転換検討</td></tr>
+<tr><td>月商が損益分岐点の50%未満が3ヶ月継続</td><td>撤退検討</td></tr>
+<tr><td>医師が確保できず3ヶ月以上休診</td><td>撤退決定</td></tr>
+</table>
+
+<!-- ============================================================ -->
+<!-- REFERENCES -->
+<!-- ============================================================ -->
+
+<h1 id="references">参考資料・情報源</h1>
+
+<h3>開業・費用関連</h3>
+<ul>
+  <li><a href="https://clinics-cloud.com/column/382">CLINICS「美容皮膚科の開業資金を解説」</a></li>
+  <li><a href="https://www.phchd.com/jp/medicom/park/idea/opening-dermatology">メディコム「皮膚科開業の成功ポイント」</a></li>
+  <li><a href="https://medibase.cloud/blog/beautyclinic_openingfund/">Medibase「美容クリニック開業の投資予算」</a></li>
+</ul>
+
+<h3>多店舗展開</h3>
+<ul>
+  <li><a href="https://prtimes.jp/main/html/rd/p/000000157.000034186.html">TCB 100院達成プレスリリース</a></li>
+  <li><a href="https://www.strategy-advisors.co.jp/wp-content/uploads/2024/11/f791af18464e058321cc3104b6de5b59.pdf">SBCメディカルグループ戦略資料</a></li>
+  <li><a href="https://clius.jp/mag/2020/09/21/clinic-branch/">CLIUS クリニック分院展開ガイド</a></li>
+</ul>
+
+<h3>医療法人化</h3>
+<ul>
+  <li><a href="https://www.hokeniryo.metro.tokyo.lg.jp/iryo/hojin/tebiki">東京都保健医療局「医療法人設立の手引」</a></li>
+  <li><a href="https://clius.jp/mag/2021/04/07/how-to-be-incorporation/">医療法人化プロセスガイド</a></li>
+  <li><a href="https://www.mhlw.go.jp/topics/bukyoku/isei/igyou/igyoukeiei/tetuduki/rijityouyouken.html">厚生労働省 理事長要件</a></li>
+</ul>
+
+<h3>人員・KPI</h3>
+<ul>
+  <li><a href="https://dr-connect.jp/article/contents/5342">ドクターコネクト「美容皮膚科医の平均年収」</a></li>
+  <li><a href="https://www.co-medical.com/knowledge/article559/">コメディカルドットコム「美容看護師について」</a></li>
+  <li><a href="https://credo-m.co.jp/hifuka/topics/marketing/230.html">皮膚科経営ドットコム「KPI設定」</a></li>
+  <li><a href="https://medical-reserve.co.jp/shinryoka/biyouhifuka">メディカル革命「キャンセル率低減事例」</a></li>
+</ul>
+
+<h3>一般社団法人・法人設立</h3>
+<ul>
+  <li><a href="https://m-support1.com/m-association/">医療法務支援協会「一般社団法人での診療所開設」</a></li>
+  <li><a href="https://wakaba-sdn.com/clinic/">一般社団法人設立センター「クリニック開設手続き」</a></li>
+  <li><a href="https://beoneclinic.co.jp/blog/about-medical-ippanshadanhoujin2">ビーワンクリニック「一般社団法人でクリニック開設」</a></li>
+  <li><a href="https://www.iwm-ac.jp/wp/?p=2424">岩見直茂 公認会計士事務所「非営利型一般社団法人による診療所開設」</a></li>
+  <li><a href="https://www.freee.co.jp/kb/kb-launch/institute/">freee「一般社団法人設立の流れ・費用」</a></li>
+</ul>
+
+<h3>物件情報</h3>
+<ul>
+  <li><a href="https://best-tokyo.com/office/items/1263">東京ベストオフィス「The SH one」</a></li>
+  <li><a href="https://www.office-navi.jp/building/02007297/">オフィスナビ「The SH oneビル」</a></li>
+  <li><a href="https://officee.jp/price/tokyo/area/toshima-ku/G1/">officee「池袋（豊島区）賃貸オフィス賃料相場」</a></li>
+</ul>
+
+<h3>資金調達</h3>
+<ul>
+  <li><a href="https://prtimes.jp/main/html/rd/p/000000149.000097803.html">SBC NASDAQ上場プレスリリース</a></li>
+  <li><a href="https://legacy.ne.jp/knowledge/before/jigyo-shokei-before/753-mshoujin-medical-service-houjin-setsuzei-kouka-meritto-kaisetsu/">MS法人のメリット解説</a></li>
+</ul>
+
+<div style="margin-top:60px; padding-top:20px; border-top:1px solid #e2e8f0; text-align:center; color:#94a3b8; font-size:9pt;">
+  <p>Beauty Dermatology Clinic Business Plan &mdash; Confidential</p>
+  <p>Last updated: February 2026</p>
+</div>
+
+</body>
+</html>
